@@ -1,0 +1,38 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E1F5FE"/>
+      <stop offset="100%" style="stop-color:#B3E5FC"/>
+    </linearGradient>
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4FC3F7"/>
+      <stop offset="100%" style="stop-color:#03A9F4"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background shapes with gradients and shadows -->
+  <rect x="40" y="50" width="130" height="110" rx="15" ry="15" fill="url(#bgGradient)" filter="url(#shadow)" />
+  <rect x="30" y="40" width="130" height="110" rx="15" ry="15" fill="url(#bgGradient)" filter="url(#shadow)" />
+
+  <!-- Main speech bubble with gradient and shadow -->
+  <path d="M20 30 H170 Q185 30 185 45 V125 Q185 140 170 140 H50 L35 155 V140 H20 Q5 140 5 125 V45 Q5 30 20 30 Z" 
+        fill="url(#mainGradient)" filter="url(#shadow)" />
+
+  <!-- Quote marks with 3D effect -->
+  <text x="30" y="70" font-family="Arial, sans-serif" font-size="50" font-weight="bold" fill="white" stroke="white" stroke-width="2">
+    <tspan>"</tspan>
+    <tspan dx="-10">"</tspan>
+  </text>
+
+  <!-- Text lines with rounded ends and subtle gradient -->
+  <linearGradient id="lineGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" style="stop-color:#FFFFFF"/>
+    <stop offset="100%" style="stop-color:#E1F5FE"/>
+  </linearGradient>
+  <rect x="30" y="85" width="120" height="10" rx="5" ry="5" fill="url(#lineGradient)" />
+  <rect x="30" y="105" width="100" height="10" rx="5" ry="5" fill="url(#lineGradient)" />
+  <rect x="30" y="125" width="80" height="10" rx="5" ry="5" fill="url(#lineGradient)" />
+</svg>
